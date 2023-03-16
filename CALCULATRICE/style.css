@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(21, 21, 88);
+}
+.grid-main {
+    display: grid;
+    place-content: center;
+    grid-template-areas:
+      "nombres signe fonctions";
+    grid-template-columns: 300px 100px;
+    grid-template-rows: 400px 00 px;
+    gap: 5px;
+    
+}
+  .grid-nombres {
+    grid-area: nombres;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+}
+  
+  
+  .grid-signe {
+    grid-area: signe;
+    display: grid;
+}
+  
+  .grid-ACDEL {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-area : fonctions;
+  text-align: left;
+  }
+  
+  .grid-affichage{
+    position: static;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  .nombres {
+    background-color: rgb(66, 128, 163);
+  }
+
+  .signe {
+    background-color: rgb(66, 128, 163);
+  }
+
+  .fonctions{
+    background-color: rgb(66, 128, 163);
+  }
